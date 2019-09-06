@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: rest.RenameMeResourceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.092 s <<< FAILURE! - in rest.RenameMeResourceTest
+rest.RenameMeResourceTest  Time elapsed: 0.092 s  <<< ERROR!
+javax.persistence.PersistenceException: 
+Exception [EclipseLink-28019] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Deployment of PersistenceUnit [pu] failed. Close all factories for this PersistenceUnit.
+Internal Exception: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [DELETE from RenameMe]. 
+[12, 20] The abstract schema type 'RenameMe' is unknown.
+	at rest.RenameMeResourceTest.setUpClass(RenameMeResourceTest.java:45)
+Caused by: org.eclipse.persistence.exceptions.EntityManagerSetupException: 
+
+Exception Description: Deployment of PersistenceUnit [pu] failed. Close all factories for this PersistenceUnit.
+Internal Exception: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Problem compiling [DELETE from RenameMe]. 
+[12, 20] The abstract schema type 'RenameMe' is unknown.
+	at rest.RenameMeResourceTest.setUpClass(RenameMeResourceTest.java:45)
+Caused by: org.eclipse.persistence.exceptions.JPQLException: 
+
+Exception Description: Problem compiling [DELETE from RenameMe]. 
+[12, 20] The abstract schema type 'RenameMe' is unknown.
+	at rest.RenameMeResourceTest.setUpClass(RenameMeResourceTest.java:45)
+
